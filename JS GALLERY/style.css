@@ -1,0 +1,113 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .container {
+        display: flex;
+        height: 100vh;
+       
+      }
+      .box1 {
+        background-image: url(img/backiee-189058.jpg);
+        background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+      }
+      .box2 {
+        background-image: url(img/backiee-192887.jpg);
+        background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+      }
+      .box3 {
+        background-image: url(img/28-05-2022\ 23_36_50.png);
+        background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+       
+      }
+      .box4 {
+        background-image: url(img/backiee-229177.jpg);
+        background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+      }
+      .box5 {
+        background-image: url(img/backiee-229189.jpg);
+        background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+       
+      }
+      .boxs {
+        display: flex;
+        flex-direction: column;
+
+        flex: 1;
+        font-size: 6.5vw;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all cubic-bezier(0.17, 0.88, 0.32, 1.28) 1s;
+      }
+      .boxs > * {
+        transition: transform cubic-bezier(0.17, 0.88, 0.32, 1.28) 0.5s;
+      }
+      .boxs > *:first-child {
+        transform: translateY(-1000px);
+      }
+      .boxs > *:last-child {
+        transform: translateY(1000px);
+      }
+
+      .boxs-active > *:first-child {
+        transform: translateY(0);
+      }
+      .boxs-active > *:last-child {
+        transform: translateY(0);
+      }
+
+      .boxshov {
+        flex: 10;
+      }
+      p {
+        font-family: "dancing script";
+        color: white;
+      }
+      h1 {
+        font-family: "dancing script";
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 3px black;
+        display: inline-block;
+        font-size: 2.3vw;
+        cursor: pointer;
+        flex: .98;
+      }
+      .nav {
+        background-image: url(img/backiee-99689.jpg);
+        background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+        display: flex;
+        height: 55px;
+        align-items: center;
+        justify-content: end;
+      }
+      li {
+        margin: 0.6rem;
+        list-style: none;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: white;
+      }
+      @media screen and (max-width: 480px){
+        .container{
+          flex-direction: column;
+        }
+      }
