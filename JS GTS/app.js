@@ -60,7 +60,7 @@ const checkAnswer = () => {
   } else {
     
     
-    count =0;
+    
     document.querySelector(".score").innerHTML = count;
     document.querySelector(".citybox").innerHTML = `
     <h1 class="city"> Game Over!!! <br>
@@ -72,6 +72,8 @@ const checkAnswer = () => {
     input.value = "";
     setTimeout(() => {
       run();
+      count = 0;
     }, 3000);
   }
+   
 };
