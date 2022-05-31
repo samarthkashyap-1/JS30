@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="logo"><h1 class="heading">Welcome to Guess The State</h1></div>
+
+    <div class="btns">
+      <button class="play">Start</button>
+    </div>
+    <div class="citybox"></div>
+    <div class="input">
+      <h1 class="sug">Type Your Answer Here !!!</h1>
+
+      <input
+        type="search"
+        name=""
+        placeholder="Answer"
+        class="ansbox"
+        id="input"
+        onchange="checkAnswer()"
+      />
+    </div>
+    <div class="scoreb">
+      <h1 class="board">Score Board</h1>
+      <h2 class="score">0</h2>
+    </div>
+    <footer>Developed by Samarth Kashyap</footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

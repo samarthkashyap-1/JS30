@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap"
+    rel="stylesheet"
+    />
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-image: url(img/backiee-99689.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 56vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            
+        }
+        .links{
+            margin-top: 60px ;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+            
+            
+        }
+    .link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 6px;
+        width: 26vw;
+        height: 22vh;
+        transition: all cubic-bezier(0.5,-0.41, 0.27, 1.55) 0.5s;
+    }
+    .link:hover{
+        transform: scale(1.1);
+        box-shadow: 5px 9px 4px 2px grey;
+    }
+    h1{
+        text-shadow: 4px 6px 4px  rgb(237, 146, 244);
+        font-family:"dancing script" ;
+        font-size: 10vw; 
+        text-align: center;  
+        color: white;  
+    }
+    a{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        color: black;
+    }
+    img{
+        border: 2px solid gray;  
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 5px;
+    }
+    p{
+        padding: 5px;
+        font-size: 1.2rem;
+        text-align: center;
+        align-items: center;
+        height: auto;
+        font-family: 'dancing script';
+    }
+    h3{ color: rgb(244, 113, 113);
+        text-shadow: 4px 6px 4px  rgb(255, 185, 185);
+        margin-top: 50px;
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0px 100px;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        height: 30px;
+        text-align: center;
+        align-items: center;
+    }
+    @media screen and (min-width: 480px){
+        .links{
+            margin-top: -20px;
+            flex-direction: row;
+            
+        }
+        h1{
+            font-size: 11vh;
+        }
+        h3{
+            margin-top: 100px;
+            font-size: 7vh;
+            
+        }
+        .link{
+            width: 19vw;
+            height: 33vh;
+        }
+
+    }
+        
+    
+    
+    </style>
+
+<body>
+    <div class="container">
+        <h1>JavaScript <br> 30</h1>
+    </div>
+    <hr>
+    <div class="heading">
+        <h3>Vanilla JavaScripts Projects</h3>
+    </div>
+    <div class="links">
+        <a href="JS TEMP/index.html">
+            <div class="link">
+                <img src="img/jstemp.png" alt="1">
+                <p>
+                    Temperature Indicator (Manual)
+                </p>
+            </div>
+        </a>
+        <a href="JS GALLERY/jsgallery.html">
+        <div class="link">
+                <img src="img/jsg.png" alt="2">
+                <p>
+                    JavaScript Gallery
+                </p>
+            </div>
+        </a>
+            <a href="JS CSS/index.html">
+            <div class="link">
+                    <img src="img/jscss.png" alt="3">
+                    <p>Playing With Css</p>
+                </div>
+            </a>
+            
+            <a href="JS GTS/index.html">
+            <div class="link">
+                    <img src="JS GTS/jsgtc.png" alt="3">
+                    <p>Guess The State</p>
+                </div>
+            </a>
+    </div>
+    <footer>
+        Developed By Samarth Kashyap
+    </footer>
+</body>
+</html>
